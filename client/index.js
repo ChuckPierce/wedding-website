@@ -24,13 +24,13 @@ if (process.env.NODE_ENV !== 'production') {
   }
 }
 
-if (process.env.CLIENT && !window.devToolsExtension) {
-  const devToolsDest = document.createElement('div');
-  dest.parentNode.insertBefore(devToolsDest, dest.nextSibling);
-  render(
-    <Provider store={store} key="provider">
-      <DevTools />
-    </Provider>,
-    devToolsDest
-  );
-}
+// if (process.env.CLIENT && !window.devToolsExtension) {
+//   const devToolsDest = document.createElement('div');
+//   dest.parentNode.insertBefore(devToolsDest, dest.nextSibling);
+//   render(
+//     <Provider store={store} key="provider">
+//       <DevTools />
+//     </Provider>,
+//     devToolsDest
+//   );
+// }

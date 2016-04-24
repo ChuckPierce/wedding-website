@@ -161,13 +161,14 @@ body {
 	background-position: center;
 	background-size: cover;
 	border-bottom: 1px solid #ccc;
+	height: 100vh;
 }
 
 .header .header-content {
 	width: 100%;
 	max-width: 980px;
 	margin: auto;
-	padding: 300px 16px;
+	padding: 400px 16px;
 	overflow: auto;
 }
 
@@ -211,6 +212,31 @@ body {
 	color: #FFF;
 	text-decoration: none;
 	font-weight: 700;
+}
+
+.nav {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1080px;
+    margin: 0 auto;
+}
+
+.nav a{
+	color: white;
+	text-decoration: none;
+}
+
+.logo {
+	height: 40px;
+	width: 40px;
 }
 
 @media (max-width: 767px){

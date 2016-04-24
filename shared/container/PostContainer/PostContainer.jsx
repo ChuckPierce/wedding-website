@@ -3,6 +3,7 @@ import PostListView from '../PostListView/PostListView';
 import PostCreateView from '../../components/PostCreateView/PostCreateView';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import Nav from '../../components/Nav/Nav';
 import { connect } from 'react-redux';
 import * as Actions from '../../redux/actions/actions';
 
@@ -40,13 +41,14 @@ class PostContainer extends Component {
   render() {
     return (
       <div>
+          <Nav />
         <Header onClick={this.handleClick} />
-        <div className="container">
+        {/*<div className="container">
           <PostCreateView addPost={this.add}
             showAddPost={this.state.showAddPost}/>
           <PostListView posts={this.props.posts}/>
         </div>
-        <Footer />
+        <Footer />*/}
       </div>
     );
   }
