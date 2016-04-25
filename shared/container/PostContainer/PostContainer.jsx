@@ -1,8 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import PostListView from '../PostListView/PostListView';
-import PostCreateView from '../../components/PostCreateView/PostCreateView';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import { connect } from 'react-redux';
 import * as Actions from '../../redux/actions/actions';
@@ -17,12 +14,10 @@ class PostContainer extends Component {
     this.add = this.add.bind(this);
   }
 
-  handleClick(e) {
-    this.setState({
-      showAddPost: !this.state.showAddPost,
-    });
-
-    e.preventDefault();
+  componentDidMount() {
+    if (this.props.posts.length === 0) {
+      this.props.dispatch(Actions.fetchPosts());
+    }
   }
 
   add(name, title, content) {
@@ -32,23 +27,18 @@ class PostContainer extends Component {
     });
   }
 
-  componentDidMount() {
-    if(this.props.posts.length === 0) {
-      this.props.dispatch(Actions.fetchPosts());
-    }
-  }
+  handleClick(e) {
+    this.setState({
+      showAddPost: !this.state.showAddPost,
+    });
 
+    e.preventDefault();
+  }
   render() {
     return (
       <div>
           <Nav />
-        <Header onClick={this.handleClick} />
-        {/*<div className="container">
-          <PostCreateView addPost={this.add}
-            showAddPost={this.state.showAddPost}/>
-          <PostListView posts={this.props.posts}/>
-        </div>
-        <Footer />*/}
+        <Header image="img/proposal.jpg" />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 function Header(props) {
   return (
-    <div className="header">
+    <div className="header" style={{ backgroundImage: `url(${props.image})` }}>
     </div>
   );
 }
@@ -12,8 +12,7 @@ Header.contextTypes = {
 };
 
 Header.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  handleLogoClick: PropTypes.func,
+  image: PropTypes.string,
 };
 
 export default Header;

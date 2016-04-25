@@ -218,6 +218,7 @@ body {
 	position: absolute;
 	top: 20px;
 	width: 100%;
+	background-color: rgba(128,128,128,0.5);
 }
 
 .nav-container {
@@ -227,16 +228,42 @@ body {
 	align-items: center;
 	max-width: 1080px;
     margin: 0 auto;
+	padding: 4px 0;
 }
 
 .nav a{
 	color: white;
 	text-decoration: none;
+	font-family: 'Slabo', sans-serif;
 }
 
 .logo {
 	height: 40px;
 	width: 40px;
+}
+
+.content-container {
+	position: absolute;
+    top: 100px;
+    left: 15%;
+    right: 15%;
+    color: white;
+    background-color: rgba(128,128,128,0.7);
+    width: 70%;
+    bottom: 75px;
+	overflow: scroll;
+}
+
+.content {
+	padding: 30px;
+}
+
+p {
+	font-size: 1em;
+    line-height: 1.618em;
+    margin-bottom: 1.618em;
+    margin-top: 0;
+    clear: both;
 }
 
 @media (max-width: 767px){
