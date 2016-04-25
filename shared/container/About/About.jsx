@@ -27,6 +27,9 @@ class About extends Component {
                   </p>
                   <p>
                       After Kaitlin came back from studying abroad in the fall of 2008, they found themselves both
+                      at a party with fellow Thespians and theatre people. Kaitlin, noticing Chuck from across the
+                      room, walked over to him and said, with no fear, "We should date". Chuck was taken aback by her
+                      bravery 
                   </p>
               </div>
           </div>
