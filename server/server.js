@@ -71,7 +71,7 @@ const renderFullPage = (html, initialState) => {
       <body>
         <div id="root">${html}</div>
         <script>
-          window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
+          window.INITIAL_STATE = ${JSON.stringify(initialState)};
         </script>
         <script src="/dist/bundle.js"></script>
       </body>

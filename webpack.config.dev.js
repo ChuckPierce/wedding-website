@@ -1,6 +1,6 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 
-module.exports = {
+export default {
   devtool: 'cheap-module-eval-source-map',
 
   entry: ['webpack-hot-middleware/client',
@@ -8,7 +8,7 @@ module.exports = {
   ],
 
   output: {
-    path: __dirname + '/dist/',
+    path: `${__dirname}/dist/`,
     filename: 'bundle.js',
     publicPath: '/dist/',
   },
@@ -39,7 +39,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         CLIENT: JSON.stringify(true)
-      }
-    })
+      },
+    }),
   ],
 };

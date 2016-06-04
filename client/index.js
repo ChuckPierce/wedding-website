@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { configureStore } from '../shared/redux/store/configureStore';
 
-const store = configureStore(window.__INITIAL_STATE__);
+const store = configureStore(window.INITIAL_STATE);
 const history = browserHistory;
 const dest = document.getElementById('root');
 

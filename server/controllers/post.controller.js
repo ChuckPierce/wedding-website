@@ -8,7 +8,7 @@ export function getPosts(req, res) {
     if (err) {
       return res.status(500).send(err);
     }
-    res.json({ posts });
+    return res.json({ posts });
   });
 }
 
@@ -26,7 +26,7 @@ export function addPost(req, res) {
 
   newPost.slug = slug(newPost.title.toLowerCase(), { lowercase: true });
   newPost.cuid = cuid();
-  newPost.save((err, saved) => {
+  return newPost.save((err, saved) => {
     if (err) {
       return res.status(500).send(err);
     }
@@ -41,7 +41,7 @@ export function getPost(req, res) {
     if (err) {
       return res.status(500).send(err);
     }
-    res.json({ post });
+    return res.json({ post });
   });
 }
 
@@ -52,7 +52,7 @@ export function deletePost(req, res) {
       return res.status(500).send(err);
     }
 
-    post.remove(() => {
+    return post.remove(() => {
       res.status(200).end();
     });
   });

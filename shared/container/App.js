@@ -4,12 +4,13 @@ import { connect } from 'react-redux';
 class App extends Component {
   constructor(props, context) {
     super(props, context);
+    this.state = {};
   }
 
   render() {
     return (
       <div>
-        { this.props.children }
+        {this.props.children}
       </div>
     );
   }

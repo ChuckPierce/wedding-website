@@ -10,7 +10,7 @@ describe('reducer tests', () => {
       name: 'prank',
       title: 'first post',
       content: 'Hello world!',
-      _id: null,
+      id: null,
       cuid: null,
       slug: 'first-post',
     }, 'foo'], post: null };
@@ -20,7 +20,7 @@ describe('reducer tests', () => {
       name: 'prank',
       title: 'first post',
       content: 'Hello world!',
-      _id: null,
+      id: null,
       cuid: null,
       slug: 'first-post',
     };
@@ -35,7 +35,7 @@ describe('reducer tests', () => {
         name: 'prank',
         title: 'first post',
         content: 'Hello world!',
-        _id: null,
+        id: null,
         slug: 'first-post',
 
       }],
@@ -47,14 +47,14 @@ describe('reducer tests', () => {
         name: 'prank',
         title: 'first post',
         content: 'Hello world!',
-        _id: null,
+        id: null,
         slug: 'first-post',
       }],
       post: {
         name: 'prank',
         title: 'first post',
         content: 'Hello world!',
-        _id: null,
+        id: null,
         slug: 'first-post',
       },
     };
@@ -65,7 +65,7 @@ describe('reducer tests', () => {
         name: 'prank',
         title: 'first post',
         content: 'Hello world!',
-        _id: null,
+        id: null,
         slug: 'first-post',
       },
     };

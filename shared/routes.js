@@ -11,11 +11,11 @@ import Rsvp from './container/Rsvp/Rsvp';
 const routes = (
   <Route path="/" component={App} >
     <IndexRoute component={PostContainer} />
-    <Route path="/post/:slug" component={PostDetailView}/>
-    <Route path="/our-story" component={About}/>
-    <Route path="/venue" component={Venue}/>
-    <Route path="/gifts" component={Gifts}/>
-    <Route path="/rsvp" component={Rsvp}/>
+    <Route path="/post/:slug" component={PostDetailView} />
+    <Route path="/our-story" component={About} />
+    <Route path="/venue" component={Venue} />
+    <Route path="/gifts" component={Gifts} />
+    <Route path="/rsvp" component={Rsvp} />
   </Route>
 );
 

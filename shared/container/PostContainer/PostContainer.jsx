@@ -37,7 +37,7 @@ class PostContainer extends Component {
   render() {
     return (
       <div>
-          <Nav />
+        <Nav />
         <Header image="img/proposal.jpg" />
       </div>
     );

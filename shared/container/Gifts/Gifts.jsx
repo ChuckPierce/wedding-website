@@ -12,8 +12,8 @@ class Gifts extends Component {
   render() {
     return (
       <div>
-          <Nav />
-          <Header image="img/proposal-4.jpg"/>
+        <Nav />
+        <Header image="img/proposal-4.jpg" />
       </div>
     );
   }
