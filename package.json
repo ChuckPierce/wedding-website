@@ -68,6 +68,7 @@
     "expect": "^1.13.4",
     "expect-jsx": "^2.2.2",
     "extract-text-webpack-plugin": "^1.0.1",
+    "image-webpack-loader": "^1.8.0",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
     "pre-commit": "^1.1.2",

@@ -13,7 +13,7 @@ class Gifts extends Component {
     return (
       <div>
         <Nav />
-        <Header image="img/proposal-4.jpg" />
+        <Header image="img/chuckkaitlin-24.jpg" />
       </div>
     );
   }

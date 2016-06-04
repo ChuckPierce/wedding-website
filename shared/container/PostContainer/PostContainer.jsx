@@ -38,7 +38,7 @@ class PostContainer extends Component {
     return (
       <div>
         <Nav />
-        <Header image="img/proposal.jpg" />
+        <Header image="img/chuckkaitlin-52.jpg" />
       </div>
     );
   }

@@ -12,8 +12,8 @@ class Venue extends Component {
   render() {
     return (
       <div>
-          <Nav />
-         <Header image="img/proposal-3.jpg"/>
+        <Nav />
+        <Header image="img/chuckkaitlin-41.jpg" />
       </div>
     );
   }

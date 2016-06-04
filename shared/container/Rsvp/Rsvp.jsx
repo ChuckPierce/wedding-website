@@ -12,8 +12,8 @@ class Rsvp extends Component {
   render() {
     return (
       <div>
-          <Nav />
-          <Header image="img/proposal.jpg"/>
+        <Nav />
+        <Header image="img/chuckkaitlin-13.jpg" />
       </div>
     );
   }
