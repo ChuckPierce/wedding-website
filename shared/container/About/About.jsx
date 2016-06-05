@@ -69,11 +69,6 @@ function mapStateToProps(store) {
 }
 
 About.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
-  })).isRequired,
   dispatch: PropTypes.func.isRequired,
 };
 

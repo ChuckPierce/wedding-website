@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
 import logger from 'morgan';
+import passport from 'passport';
+import { Strategy } from 'passport-local';
 
 // Webpack Requirements
 import webpack from 'webpack';
@@ -27,10 +29,17 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
 
+// passport config
+import User from './models/user';
+passport.use(new Strategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
 // Import required modules
-import routes from '../shared/routes';
-import { fetchComponentData } from './util/fetchData';
-import posts from './routes/post.routes';
+import createRoutes from '../shared/routes';
+// import { fetchComponentData } from './util/fetchData';
+// import posts from './routes/post.routes';
+import users from './routes/user.routes';
 import dummyData from './dummyData';
 import serverConfig from './config';
 
@@ -46,10 +55,13 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
 });
 
 // Apply body Parser and server public assets and routes
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
 app.use(Express.static(path.resolve(__dirname, '../static')));
-app.use('/api', posts);
+// app.use('/api', posts);
+app.use('/', users);
 
 // Render Initial HTML
 const renderFullPage = (html, initialState) => {
@@ -86,8 +98,14 @@ const renderError = err => {
   return renderFullPage(`Server Error${errTrace}`, {});
 };
 
+
+
 // Server Side Rendering based on routes matched by React-router.
 app.use((req, res, next) => {
+  const authenticated = req.isAuthenticated();
+  const initialState = { user: { authenticated } };
+  const store = configureStore(initialState);
+  const routes = createRoutes(store);
   match({ routes, location: req.url }, (err, redirectLocation, renderProps) => {
     if (err) {
       return res.status(500).end(renderError(err));
@@ -101,21 +119,13 @@ app.use((req, res, next) => {
       return next();
     }
 
-    const initialState = { posts: [], post: {} };
-
-    const store = configureStore(initialState);
-
-    return fetchComponentData(store, renderProps.components, renderProps.params)
-      .then(() => {
-        const initialView = renderToString(
-          <Provider store={store}>
-            <RouterContext {...renderProps} />
-          </Provider>
-        );
-        const finalState = store.getState();
-
-        res.status(200).end(renderFullPage(initialView, finalState));
-      });
+    const initialView = renderToString(
+      <Provider store={store}>
+        <RouterContext {...renderProps} />
+      </Provider>
+    );
+    const finalState = store.getState();
+    return res.status(200).end(renderFullPage(initialView, finalState));
   });
 });
 

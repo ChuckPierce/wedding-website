@@ -1,8 +1,8 @@
 import * as ActionTypes from '../constants/constants';
 
-const initialState = { posts: [], post: null };
+const initialState = { posts: [], post: null, user: {} };
 
-const postReducer = (state = initialState, action) => {
+export default function (state = initialState, action) {
   switch (action.type) {
     case ActionTypes.ADD_POST :
       return {
@@ -44,4 +44,4 @@ const postReducer = (state = initialState, action) => {
   }
 };
 
-export default postReducer;
+

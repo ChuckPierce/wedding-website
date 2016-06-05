@@ -1,5 +1,5 @@
 import React from 'react';
-import routes from '../shared/routes';
+import createRoutes from '../shared/routes';
 // import DevTools from '../shared/container/DevTools/DevTools';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -7,6 +7,7 @@ import { Router, browserHistory } from 'react-router';
 import { configureStore } from '../shared/redux/store/configureStore';
 
 const store = configureStore(window.INITIAL_STATE);
+const routes = createRoutes(store);
 const history = browserHistory;
 const dest = document.getElementById('root');
 
