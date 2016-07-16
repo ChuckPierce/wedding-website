@@ -4,7 +4,7 @@ import Nav from '../../components/Nav/Nav';
 import { connect } from 'react-redux';
 import * as Actions from '../../redux/actions/actions';
 
-class PostContainer extends Component {
+class Home extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
@@ -44,8 +44,8 @@ class PostContainer extends Component {
   }
 }
 
-PostContainer.need = [() => { return Actions.fetchPosts(); }];
-PostContainer.contextTypes = {
+Home.need = [() => { return Actions.fetchPosts(); }];
+Home.contextTypes = {
   router: React.PropTypes.object,
 };
 
@@ -55,7 +55,7 @@ function mapStateToProps(store) {
   };
 }
 
-PostContainer.propTypes = {
+Home.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -64,4 +64,4 @@ PostContainer.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps)(PostContainer);
+export default connect(mapStateToProps)(Home);

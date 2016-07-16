@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as Actions from '../../redux/actions/actions';
 import Header from '../../components/Header/Header';
 
-class Rsvp extends Component {
+class Gallery extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {};
@@ -19,8 +19,8 @@ class Rsvp extends Component {
   }
 }
 
-Rsvp.need = [() => { return Actions.fetchPosts(); }];
-Rsvp.contextTypes = {
+Gallery.need = [() => { return Actions.fetchPosts(); }];
+Gallery.contextTypes = {
   router: React.PropTypes.object,
 };
 
@@ -30,7 +30,7 @@ function mapStateToProps(store) {
   };
 }
 
-Rsvp.propTypes = {
+Gallery.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
@@ -39,4 +39,4 @@ Rsvp.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps)(Rsvp);
+export default connect(mapStateToProps)(Gallery);

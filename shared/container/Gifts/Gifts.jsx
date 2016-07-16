@@ -14,6 +14,11 @@ class Gifts extends Component {
       <div>
         <Nav />
         <Header image="img/chuckkaitlin-24.jpg" />
+        <div className="content-container">
+          <div className="content">
+            <h2>Coming soon...</h2>
+          </div>
+        </div>
       </div>
     );
   }

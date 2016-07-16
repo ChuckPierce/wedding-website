@@ -253,15 +253,17 @@ body {
 }
 
 .content {
-	padding: 30px 5%;
-	text-align: center;
+	padding: 30px 10em;
+	min-width: 20em;
 }
 
 p {
 	font-size: 1em;
     line-height: 1.618em;
-    margin-bottom: 1.618em;
-    margin-top: 0;
+    margin: auto;
+	padding: 1em;
+	max-width: 34em;
+	min-width: 20em;
     clear: both;
 }
 

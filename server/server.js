@@ -61,7 +61,7 @@ const renderFullPage = (html, initialState) => {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Boland + Pierce Wedding</title>
+        <title>Kaitlin + Chuck Wedding</title>
         <link rel="stylesheet" href=${cssPath} />
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'/>
         <link rel="shortcut icon" href="/img/favicon.ico"/>
