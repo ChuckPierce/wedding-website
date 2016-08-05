@@ -86,6 +86,7 @@
   "devDependencies": {
   },
   "engines": {
-    "node": ">=4"
+    "node": "4.4.3",
+    "npm": "3.10.5"
   }
 }
