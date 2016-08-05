@@ -1,5 +1,5 @@
 const config = {
-  mongoURL: process.env.MONGO_URI || 'mongodb://localhost:27017/wedding-website',
+  mongoURL: process.env.MONGODB_URI || 'mongodb://localhost:27017/wedding-website',
   port: process.env.PORT || 8000,
 };
 
