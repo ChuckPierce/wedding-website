@@ -15,7 +15,7 @@ const styles = {
     backgroundSize: 'cover',
     borderRadius: 3,
     display: 'inline-block',
-    height: THUMBNAIL_SIZE,
+    height: 100,
     margin: 5,
     overflow: 'hidden',
     width: THUMBNAIL_SIZE,
@@ -101,11 +101,11 @@ class Gallery extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ textAlign: 'center' }}>
         <Nav />
         <Header image="img/chuckkaitlin-13.jpg" />
         <div className="content-container">
-          <div style={{ textAlign: 'center' }}>
+          <div className="content">
             {this.renderGallery()}
           </div>
           <Lightbox

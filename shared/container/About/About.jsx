@@ -16,9 +16,9 @@ class About extends Component {
         <Header image="img/proposal.jpg" />
         <div className="content-container">
           <div className="content">
-            <h2 style={{ textAlign: 'center' }}>How We Met</h2>
+            <h2>How We Met</h2>
             <hr style={{ marginTop: 5 }} />
-            <p style={{ paddingTop: 30 }}>
+            <p>
                 Kaitlin and Chuck met while being a part of the Penn State Thespians while
                 attending Pennsylvania State University. The Thespians are a student-run
                 organization, mostly for those not majoring in Theatre. They both joined for
@@ -33,16 +33,16 @@ class About extends Component {
                 the production staff for the Penn State Thespian production of Joseph and the Amazing Technicolor
                 Dreamcoat.
             </p>
-            <h2 style={{ textAlign: 'center' }}>Moving to NYC</h2>
+            <h2>Moving to NYC</h2>
             <hr style={{ marginTop: 5 }} />
-            <p style={{ paddingTop: 30 }}>
+            <p>
               Skipping ahead to the summer of 2010. Kaitlin and Chuck have been dating long distance since Chuck graduated in 2009.
               After Kaitlin's graduation from Penn State, she immediatley moved to New York City for an internship. After another internship
               in the fall, she convinced Chuck to move to NYC.  They started living together in Washington Heights together at the start of 2011.
             </p>
-            <h2 style={{ textAlign: 'center' }}>The Proposal</h2>
+            <h2>The Proposal</h2>
             <hr style={{ marginTop: 5 }} />
-            <p style={{ paddingTop: 30 }}>
+            <p>
               After living and having fun in the city for nearly four years, Chuck decided to plan the proposal.
               Knowing that she was a big Broadway fan, he contacted her boss at her new job: the Assistant Company Manager
               of the Broadway show School of Rock.  Chuck planned with her boss to get Kaitlin to come to the theatre by

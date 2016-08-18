@@ -218,7 +218,7 @@ body {
 	position: absolute;
 	top: 20px;
 	width: 100%;
-	background-color: rgba(128,128,128,0.5);
+	background-color: rgba(48,48,48,0.7);
 }
 
 .nav-container {
@@ -246,25 +246,30 @@ body {
 	position: absolute;
     top: 100px;
     color: white;
-    background-color: rgba(128,128,128,0.7);
+    background-color: rgba(48,48,48,0.7);
     width: 100%;
     bottom: 0px;
 	overflow: scroll;
 }
 
 .content {
-	padding: 30px 10em;
-	min-width: 20em;
+	padding: 30px 10px;
+	max-width: 1080px;
+    margin: 0 auto;
 }
 
 p {
 	font-size: 1em;
     line-height: 1.618em;
     margin: auto;
-	padding: 1em;
 	max-width: 34em;
-	min-width: 20em;
+	padding-top: 30px;
     clear: both;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 30px;
 }
 
 @media (max-width: 767px){

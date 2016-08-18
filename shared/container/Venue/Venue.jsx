@@ -17,9 +17,9 @@ class Venue extends Component {
         <Header image="img/chuckkaitlin-41.jpg" />
         <div className="content-container">
           <div className="content">
-            <h2 style={{ textAlign: 'center' }}>The Ceremony</h2>
+            <h2>The Ceremony</h2>
             <hr style={{ marginTop: 5 }} />
-            <p style={{ paddingTop: 30 }}>
+            <p>
                 The ceremony will take place at the Miller Symphony Hall in downtown Allentown at 2pm.
             </p>
             <p>
@@ -32,9 +32,9 @@ class Venue extends Component {
             <p>
               Parking:
             </p>
-            <h2 style={{ textAlign: 'center' }}>The Reception</h2>
+            <h2>The Reception</h2>
             <hr style={{ marginTop: 5 }} />
-            <p style={{ paddingTop: 30 }}>
+            <p>
               The reception will take place at the Historic Hotel Bethlehem.
             </p>
             <p>
