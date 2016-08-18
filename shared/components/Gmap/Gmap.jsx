@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+const API_BROWSER_KEY = 'AIzaSyAvS6p1tLQYCFC4lbrqT3fl6csgh3yvhaQ';
 
 class Gmap extends Component {
   constructor() {
@@ -24,7 +25,7 @@ class Gmap extends Component {
     if (query.offsetWidth <= 980) {
       this.setState({ width: query.offsetWidth });
     } else if (query.offsetWidth > 980) {
-      this.setState({ width: 980 })
+      this.setState({ width: 980 });
     }
   }
   render() {
@@ -33,7 +34,7 @@ class Gmap extends Component {
     return (
       <p className={classString}>
         <iframe
-          src={`https://www.google.com/maps/embed?${coordsString}`}
+          src={`https://www.google.com/maps/embed/v1/place?key=${API_BROWSER_KEY}&q=${coordsString}`}
           width={width} height={height} frameBorder="0" style={{ border: 0 }} allowFullScreen
         />
       </p>

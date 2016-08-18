@@ -26,7 +26,7 @@ class Venue extends Component {
               Address: <a href="https://goo.gl/maps/X23Y8h1zGxL2">23 N 6th St, Allentown, PA 18101</a>
             </p>
             <Gmap
-              coordsString="pb=!1m14!1m8!1m3!1d2655.4046270483327!2d-75.46925530068768!3d40.603659160657564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33c192028cb97008!2sMiller+Symphony+Hall!5e0!3m2!1sen!2sus!4v1465069020896"
+              coordsString="23 N 6th St, Allentown, PA"
               classString="miller"
             />
             <p>
@@ -44,7 +44,7 @@ class Venue extends Component {
               Address: <a href="https://goo.gl/maps/L17SF1Mq7fK2">437 Main St, Bethlehem, PA 18018</a>
             </p>
             <Gmap
-              coordsString="pb=!1m14!1m8!1m3!1d5670.947556897084!2d-75.38222752417711!3d40.61948920049042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e47ba8ee77380fb!2sHistoric+Hotel+Bethlehem!5e0!3m2!1sen!2sus!4v1465069686421"
+              coordsString="437 Main St, Bethlehem, PA"
               classString="hotel"
             />
             <p>
