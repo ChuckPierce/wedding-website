@@ -7,7 +7,7 @@ function Nav() {
       <div className="nav-container">
         <Link to="/"><img alt="Wedding-Logo" className="logo" src="img/logo-white60.png" /></Link>
         <Link to="/our-story">Our Story</Link>
-        <Link to="/venue">Venue</Link>
+        <Link to="/info">Venue</Link>
         <Link to="/gifts">Gifts</Link>
         <Link to="/gallery">Gallery</Link>
       </div>

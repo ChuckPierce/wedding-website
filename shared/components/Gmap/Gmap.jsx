@@ -10,14 +10,14 @@ class Gmap extends Component {
     };
     this.handleResize = this.handleResize.bind(this);
   }
-  componentWillMount() {
-    window.addEventListener('resize', this.handleResize);
-  }
   componentDidMount() {
+    window.addEventListener('resize', this.handleResize);
     this.handleResize();
   }
   componentWillUnmount() {
-    window.addEventListener('resize', this.handleResize);
+    if (window) {
+      window.removeEventListener('resize', this.handleResize);
+    }
   }
   handleResize() {
     // debugger;

@@ -38,7 +38,14 @@ class Home extends Component {
     return (
       <div>
         <Nav />
-        <Header image="img/chuckkaitlin-52.jpg" />
+        <Header image="img/chuckkaitlin-57.jpg" />
+        <div className="content-container" style={{ backgroundColor: 'transparent' }}>
+          <div style={{ padding: 50, textAlign: 'center' }}>
+            <img src="img/logo-white.png" alt="white-logo" style={{ width: 300, height: 300 }}/>
+            <h1>Kaitlin Boland and Charles Pierce Wedding</h1>
+            <h1>April 1st, 2017</h1>
+          </div>
+        </div>
       </div>
     );
   }

@@ -30,6 +30,10 @@ body {
 	font-size: 16px;
 }
 
+a {
+	color: #fff;
+}
+
 .subtitle {
 	margin-top: 0;
 	margin-left: 0;
@@ -273,6 +277,12 @@ h2 {
 	text-align: center;
 	padding-top: 30px;
 	font-size: 30px;
+	font-family: 'Dancing Script', cursive, serif;
+}
+
+h1 {
+	padding-top: 30px;
+	font-size: 40px;
 	font-family: 'Dancing Script', cursive, serif;
 }
 

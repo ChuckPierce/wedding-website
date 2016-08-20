@@ -196,6 +196,21 @@ Gallery.defaultProps = {
     {
       src: 'img/chuckkaitlin-75.jpg',
     },
+    {
+      src: 'img/chuckkaitlin-7.jpg',
+    },
+    {
+      src: 'img/chuckkaitlin-40.jpg',
+    },
+    {
+      src: 'img/chuckkaitlin-56.jpg',
+    },
+    {
+      src: 'img/chuckkaitlin-57.jpg',
+    },
+    {
+      src: 'img/chuckkaitlin-13-2.jpg',
+    },
   ],
 };
 

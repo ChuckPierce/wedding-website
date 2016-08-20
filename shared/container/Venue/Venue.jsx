@@ -43,49 +43,44 @@ class Venue extends Component {
             />
             <h2>Accomodations</h2>
             <hr style={{ marginTop: 5 }} />
-            <div className="grid">
-              <div style={{ marginRight: 25 }}>
-                <p>
-                  Hotel Bethlehem <br />
-                  437 Main Street <br />
-                  Bethlehem, PA 18018 <br />
-                </p>
-                <p>Rooms Available for 3/31-4/1 & 4/1-4/2</p>
-                <p>
-                  To book by phone:<br />
-                  Call 610-625-5000 & reference Boland Pierce Wedding
-                </p>
-              </div>
-              <div>
-                <img
-                  alt="Hotel Bethlehem"
-                  src="img/Hotel-B-Logo.jpg"
-                  className="hotel-logo"
-                />
-              </div>
-            </div>
+            <p>
+              <img
+                alt="Hotel Bethlehem"
+                src="img/Hotel-B-Logo.jpg"
+                className="hotel-logo"
+              />
+            </p>
+            <p>
+              Hotel Bethlehem <br />
+              437 Main Street <br />
+              Bethlehem, PA 18018 <br />
+            </p>
+            <p>Rooms Available for 3/31-4/1 & 4/1-4/2</p>
+            <p>
+              To book by phone:<br />
+              Call 610-625-5000 & reference Boland Pierce Wedding
+            </p>
             <br />
-            <div className="grid">
-              <div style={{ marginRight: 25 }}>
-                <p>
-                  Hyatt Place Bethlehem <br />
-                  45 W. North Street <br />
-                  Bethlehem, PA 18018 <br />
-                </p>
-                <p>Rooms Available for 4/1-4/2</p>
-                <p>
-                  To book by phone:<br />
-                  Call 888-492-8847 & reference Boland Pierce Wedding
-                </p>
-              </div>
-              <div>
-                <img
-                  alt="Hyatt Place Bethlehem"
-                  src="img/hyatt-place.jpg"
-                  className="hotel-logo"
-                />
-              </div>
-            </div>
+            <p>
+              <img
+                alt="Hyatt Place Bethlehem"
+                src="img/hyatt-place.jpg"
+                className="hotel-logo"
+              />
+            </p>
+            <p>
+              Hyatt Place Bethlehem <br />
+              45 W. North Street <br />
+              Bethlehem, PA 18018 <br />
+            </p>
+            <p>Rooms Available for 4/1-4/2</p>
+            <p>
+              To book by phone:<br />
+              Call 888-492-8847 & reference Boland Pierce Wedding<br />
+              <br />
+              Or book on the web:<br />
+              <a href="http://bethlehem.place.hyatt.com/en/hotel/home.html?corp_id=G-OEWB">http://bethlehem.place.hyatt.com/en/hotel/home.html?corp_id=G-OEWB</a>
+            </p>
             <h2>Unoffical After Party</h2>
             <hr style={{ marginTop: 5 }} />
             <p>

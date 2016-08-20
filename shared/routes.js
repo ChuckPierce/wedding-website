@@ -11,7 +11,7 @@ const routes = (
   <Route path="/" component={App} >
     <IndexRoute component={Home} />
     <Route path="/our-story" component={About} />
-    <Route path="/venue" component={Venue} />
+    <Route path="/info" component={Venue} />
     <Route path="/gifts" component={Gifts} />
     <Route path="/gallery" component={Gallery} />
   </Route>
