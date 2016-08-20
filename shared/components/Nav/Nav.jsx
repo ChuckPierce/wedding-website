@@ -5,11 +5,11 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav-container">
-        <Link to="/"><img alt="Wedding-Logo" className="logo" src="img/logo-white.png" /></Link>
-        <Link to="/our-story">OUR STORY</Link>
-        <Link to="/venue">VENUE</Link>
-        <Link to="/gifts">GIFTS</Link>
-        <Link to="/gallery">GALLERY</Link>
+        <Link to="/"><img alt="Wedding-Logo" className="logo" src="img/logo-white60.png" /></Link>
+        <Link to="/our-story">Our Story</Link>
+        <Link to="/venue">Venue</Link>
+        <Link to="/gifts">Gifts</Link>
+        <Link to="/gallery">Gallery</Link>
       </div>
     </div>
   );
