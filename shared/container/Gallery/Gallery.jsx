@@ -35,6 +35,99 @@ const styles = {
   },
 };
 
+const engagment = [
+  {
+    src: 'img/chuckkaitlin-13.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-24.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-4.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-13.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-15.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-19.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-29.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-34.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-37.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-41.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-52.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-53.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-54.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-70.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-73.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-75.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-7.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-40.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-56.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-57.jpg',
+  },
+  {
+    src: 'img/chuckkaitlin-13-2.jpg',
+  },
+];
+
+const proposal = [
+  {
+    src: 'img/proposal-8.jpg',
+  },
+  {
+    src: 'img/proposal.jpg',
+  },
+  {
+    src: 'img/proposal-2.jpg',
+  },
+  {
+    src: 'img/proposal-3.png',
+  },
+  {
+    src: 'img/proposal-4.jpg',
+  },
+  {
+    src: 'img/proposal-5.jpg',
+  },
+  {
+    src: 'img/proposal-6.jpg',
+  },
+  {
+    src: 'img/proposal-7.jpg',
+  },
+];
+
 class Gallery extends Component {
   constructor(props, context) {
     super(props, context);
@@ -73,14 +166,14 @@ class Gallery extends Component {
     if (this.state.currentImage === this.props.images.length - 1) return;
     this.gotoNext();
   }
-  renderGallery() {
-    if (!this.props.images) return undefined;
-    const gallery = this.props.images.map((obj, i) => {
+  renderGallery(images, index = 0) {
+    if (!images) return undefined;
+    const gallery = images.map((obj, i) => {
       return (
         <a
           href={obj.src}
           key={i}
-          onClick={(e) => this.openLightbox(i, e)}
+          onClick={(e) => this.openLightbox(i + index, e)}
           style={styles.thumbnail}
         >
           <img
@@ -106,8 +199,12 @@ class Gallery extends Component {
         <Header image="img/chuckkaitlin-13.jpg" />
         <div className="content-container">
           <div className="content">
-            {this.renderGallery()}
+            {this.renderGallery(engagment)}
             <div className="caption">Photos by <i>nate heckenberger photography</i></div>
+            <br />
+            <br />
+            {this.renderGallery(proposal, 21)}
+            <div className="caption">Photos by <i>Alex Mayer</i></div>
           </div>
           <Lightbox
             images={this.props.images}
@@ -148,71 +245,7 @@ Gallery.propTypes = {
 };
 
 Gallery.defaultProps = {
-  images: [
-    {
-      src: 'img/chuckkaitlin-13.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-24.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-4.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-13.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-15.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-19.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-29.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-34.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-37.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-41.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-52.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-53.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-54.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-70.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-73.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-75.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-7.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-40.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-56.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-57.jpg',
-    },
-    {
-      src: 'img/chuckkaitlin-13-2.jpg',
-    },
-  ],
+  images: [].concat(engagment, proposal),
 };
 
 export default connect(mapStateToProps)(Gallery);
