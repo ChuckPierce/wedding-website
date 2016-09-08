@@ -298,6 +298,10 @@ h1 {
 	width: auto;
 }
 
+.caption {
+	font-size: 14px;
+}
+
 @media (max-width: 767px){
 	.add-post-button{
 		float: left;
@@ -305,3 +309,12 @@ h1 {
 	}
 }
 
+@media (max-width: 767px) {
+	.nav a{
+		font-size: 20px;
+	}
+	.logo {
+		height: 40px;
+		width: 40px;
+	}
+}

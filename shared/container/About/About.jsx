@@ -23,7 +23,7 @@ class About extends Component {
                 attending Pennsylvania State University. The Thespians are a student-run
                 organization, mostly for those not majoring in Theatre. They both joined for
                 their love of performing and being a part of the arts. After meeting some time in
-                2007 (exact date unknown) they became friends quickly and performed in shows together.
+                2007 (exact date unknown) they became friends and performed in shows together.
             </p>
             <p>
                 After Kaitlin came back from studying abroad in the fall of 2008, they found themselves both
@@ -36,9 +36,9 @@ class About extends Component {
             <h2>Moving to NYC</h2>
             <hr style={{ marginTop: 5 }} />
             <p>
-              Skipping ahead to the summer of 2010. Kaitlin and Chuck have been dating long distance since Chuck graduated in 2009.
+              Skipping ahead to the summer of 2010. Kaitlin and Chuck had been dating long distance since Chuck graduated in 2009.
               After Kaitlin's graduation from Penn State, she immediatley moved to New York City for an internship. After another internship
-              in the fall, she convinced Chuck to move to NYC.  They started living together in Washington Heights together at the start of 2011.
+              in the fall, she convinced Chuck to move to NYC.  They started living together in Washington Heights at the start of 2011.
             </p>
             <h2>The Proposal</h2>
             <hr style={{ marginTop: 5 }} />

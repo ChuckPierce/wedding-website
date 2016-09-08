@@ -107,6 +107,7 @@ class Gallery extends Component {
         <div className="content-container">
           <div className="content">
             {this.renderGallery()}
+            <div className="caption">Photos by <i>nate heckenberger photography</i></div>
           </div>
           <Lightbox
             images={this.props.images}
