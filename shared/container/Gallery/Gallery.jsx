@@ -136,7 +136,7 @@ const proposal = [
     thumb: 'img/proposal-2_thumb.jpg'
   },
   {
-    src: 'img/proposal-3.png',
+    src: 'img/proposal-3.jpg',
     thumb: 'img/proposal-3_thumb.png'
   },
   {
