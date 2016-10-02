@@ -65,8 +65,6 @@ const renderFullPage = (html, initialState) => {
         <link rel="stylesheet" href=${cssPath} />
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'/>
         <link rel="shortcut icon" href="/img/favicon.ico"/>
-        <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script" rel="stylesheet">
       </head>
       <body>
