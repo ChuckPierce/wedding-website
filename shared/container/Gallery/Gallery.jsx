@@ -38,93 +38,122 @@ const styles = {
 const engagment = [
   {
     src: 'img/chuckkaitlin-13.jpg',
+    thumb: 'img/chuckkaitlin-13_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-24.jpg',
+    thumb: 'img/chuckkaitlin-24_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-4.jpg',
+    thumb: 'img/chuckkaitlin-4_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-13.jpg',
+    thumb: 'img/chuckkaitlin-13_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-15.jpg',
+    thumb: 'img/chuckkaitlin-15_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-19.jpg',
+    thumb: 'img/chuckkaitlin-19_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-29.jpg',
+    thumb: 'img/chuckkaitlin-29_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-34.jpg',
+    thumb: 'img/chuckkaitlin-34_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-37.jpg',
+    thumb: 'img/chuckkaitlin-37_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-41.jpg',
+    thumb: 'img/chuckkaitlin-41_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-52.jpg',
+    thumb: 'img/chuckkaitlin-52_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-53.jpg',
+    thumb: 'img/chuckkaitlin-53_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-54.jpg',
+    thumb: 'img/chuckkaitlin-54_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-70.jpg',
+    thumb: 'img/chuckkaitlin-70_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-73.jpg',
+    thumb: 'img/chuckkaitlin-73_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-75.jpg',
+    thumb: 'img/chuckkaitlin-75_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-7.jpg',
+    thumb: 'img/chuckkaitlin-7_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-40.jpg',
+    thumb: 'img/chuckkaitlin-40_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-56.jpg',
+    thumb: 'img/chuckkaitlin-56_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-57.jpg',
+    thumb: 'img/chuckkaitlin-57_thumb.jpg'
   },
   {
     src: 'img/chuckkaitlin-13-2.jpg',
+    thumb: 'img/chuckkaitlin-13-2_thumb.jpg'
   },
 ];
 
 const proposal = [
   {
     src: 'img/proposal-8.jpg',
+    thumb: 'img/proposal-8_thumb.jpg'
   },
   {
     src: 'img/proposal.jpg',
+    thumb: 'img/proposal_thumb.jpg'
   },
   {
     src: 'img/proposal-2.jpg',
+    thumb: 'img/proposal-2_thumb.jpg'
   },
   {
     src: 'img/proposal-3.png',
+    thumb: 'img/proposal-3_thumb.png'
   },
   {
     src: 'img/proposal-4.jpg',
+    thumb: 'img/proposal-4_thumb.jpg'
   },
   {
     src: 'img/proposal-5.jpg',
+    thumb: 'img/proposal-5_thumb.jpg'
   },
   {
     src: 'img/proposal-6.jpg',
+    thumb: 'img/proposal-6_thumb.jpg'
   },
   {
     src: 'img/proposal-7.jpg',
+    thumb: 'img/proposal-7_thumb.jpg'
   },
 ];
 
@@ -179,7 +208,7 @@ class Gallery extends Component {
           <img
             height={styles.thumbnail.size}
             alt={''}
-            src={obj.src}
+            src={obj.thumb}
             style={styles.thumbnailImage}
             width={styles.thumbnail.size}
           />
