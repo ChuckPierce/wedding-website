@@ -20,7 +20,7 @@ class Venue extends Component {
             <h2>The Ceremony</h2>
             <hr style={{ marginTop: 5 }} />
             <p>
-                The ceremony will take place at the Miller Symphony Hall in downtown Allentown.
+                The ceremony will take place at the Miller Symphony Hall in downtown Allentown at 2 pm.
             </p>
             <p>
               Address: <a href="https://goo.gl/maps/X23Y8h1zGxL2">23 N 6th St, Allentown, PA 18101</a>
@@ -32,7 +32,7 @@ class Venue extends Component {
             <h2>The Reception</h2>
             <hr style={{ marginTop: 5 }} />
             <p>
-              The reception will take place at the Historic Hotel Bethlehem with a cocktail hour and dinner.
+              The reception will take place at the Historic Hotel Bethlehem with a cocktail hour at 5 pm and dinner starting at 6 pm.
             </p>
             <p>
               Address: <a href="https://goo.gl/maps/L17SF1Mq7fK2">437 Main St, Bethlehem, PA 18018</a>
@@ -60,6 +60,9 @@ class Venue extends Component {
               To book by phone:<br />
               Call 610-625-5000 & reference Boland Pierce Wedding
             </p>
+            <p>
+              Rooms must be booked by 2/28 to ensure group pricing
+            </p>
             <br />
             <p>
               <img
@@ -80,6 +83,9 @@ class Venue extends Component {
               <br />
               Or book on the web:<br />
               <a href="http://bethlehem.place.hyatt.com/en/hotel/home.html?corp_id=G-OEWB">http://bethlehem.place.hyatt.com/en/hotel/home.html?corp_id=G-OEWB</a>
+            </p>
+            <p>
+              Rooms must be booked by 3/2 to ensure group pricing
             </p>
             <h2>Unoffical After Party</h2>
             <hr style={{ marginTop: 5 }} />

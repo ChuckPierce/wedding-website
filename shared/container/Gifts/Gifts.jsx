@@ -16,7 +16,12 @@ class Gifts extends Component {
         <Header image="img/chuckkaitlin-24.jpg" />
         <div className="content-container">
           <div className="content">
-            <h2>Coming soon...</h2>
+            <h2>View our registry on Bed Bath & Beyond</h2>
+            <p style={{ textAlign: 'center' }}>
+              <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=543948931&pwsurl=">
+                <img src="img/bed_bath.png" alt="bed_bath_beyond" />
+              </a>
+            </p>
           </div>
         </div>
       </div>
