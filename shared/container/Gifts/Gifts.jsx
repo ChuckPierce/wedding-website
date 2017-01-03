@@ -15,11 +15,23 @@ class Gifts extends Component {
         <Nav />
         <Header image="img/chuckkaitlin-24.jpg" />
         <div className="content-container">
-          <div className="content">
-            <h2>View our registry on Bed Bath & Beyond</h2>
-            <p style={{ textAlign: 'center' }}>
+          <div className="content" style={{ textAlign: 'center' }}>
+            <h3>View our registry on Bed Bath & Beyond</h3>
+            <p style={{ textAlign: 'center', paddingBottom: 20 }}>
               <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=543948931&pwsurl=">
-                <img src="img/bed_bath.png" alt="bed_bath_beyond" />
+                <img src="img/bed_bath.png" alt="bed_bath_beyond" style={{ cursor: 'pointer' }} />
+              </a>
+            </p>
+            <h3>In addition to a traditional registry, we have also set up a Honeymoon Registry.</h3>
+            <p style={{ textAlign: 'center', paddingBottom: 20 }}>
+              <a href="http://www.travelersjoy.com/kaitlinandcharles">
+                <img src="img/honeymoon_registry.jpg" alt="honeymoon_registry" style={{ cursor: 'pointer' }} />
+              </a>
+            </p>
+            <h3>Alternatively, in lieu of gifts we would love people to make a donation to the Four Diamonds Fund, a charity we have supported since our time at Penn State</h3>
+            <p style={{ textAlign: 'center', paddingBottom: 20 }}>
+              <a href="http://fourdiamonds.donordrive.com/campaign/kaitlinandcharles">
+                <img src="img/fourdiamonds_logo.jpg" alt="four_diamonds" style={{ cursor: 'pointer' }} />
               </a>
             </p>
           </div>
